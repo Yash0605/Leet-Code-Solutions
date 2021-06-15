@@ -1,18 +1,6 @@
 var numJewelsInStones = function(jewels, stones) {
-    let jewel = {};
-    let count = 0;
-
-    for(let stone in jewels){
-        jewel[jewels[stone]] = 1;
-    }
-
-    for(let stone in stones){
-        if(jewel[stones[stone]]) {
-            count++;
-        }
-    }
-
-    console.log(count);
+    
+    console.log((stones.split('').filter(stone => jewels.indexOf(stone)!==-1)).length);
 };
 
 numJewelsInStones("z","ZZ");
