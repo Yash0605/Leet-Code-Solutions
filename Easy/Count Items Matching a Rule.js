@@ -1,5 +1,4 @@
-var countMatches = function(items, ruleKey, ruleValue) {
-    console.log(items);
+var countMatches = function(items, ruleKey, ruleValue) { 
 
     const obj = {
         'type':0,
@@ -14,7 +13,7 @@ var countMatches = function(items, ruleKey, ruleValue) {
         if(items[i][index] === ruleValue) count++;
     }
 
-    return count;
+    console.log(count);
 };
 
 countMatches([["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]], "color", "silver");
